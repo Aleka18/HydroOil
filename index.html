@@ -6,40 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - Ingeniería Química S.A.</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para la imagen principal */
+        .hero {
+            background-image: url('tu-imagen.jpg'); /* reemplaza con tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .executive-summary {
+            padding: 4rem 2rem;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        nav.navbar {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+        }
+
+        body {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <nav class="navbar">
-        <div class="logo">Ingeniería Química S.A.</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <div class="hamburger">☰</div>
+        <!-- Misma barra de navegación -->
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Innovación en Ingeniería Química</h1>
-            <p class="bubble-text">Soluciones sostenibles para el futuro</p>
-            <a href="#welcome" class="btn">Explorar</a>
-        </div>
-    </header>
-
-    <section id="welcome" class="welcome">
-        <h2>¿Quiénes Somos?</h2>
-        <div class="bubbles">
-            <div class="bubble">Expertos en procesos químicos</div>
-            <div class="bubble">Compromiso con la sostenibilidad</div>
-            <div class="bubble">Tecnología de vanguardia</div>
+    <section class="hero">
+        <div>
+            <h1>Bienvenido a Ingeniería Química S.A.</h1>
+            <p>Innovación ecológica en materiales artísticos</p>
         </div>
     </section>
 
+    <section class="executive-summary" id="resumen">
+        <h2>Resumen Ejecutivo</h2>
+        <p>
+            Somos una empresa dedicada a la fabricación de pinturas al óleo miscibles en agua, respetuosas con el medio ambiente y la salud humana. Nuestra propuesta de valor está centrada en la accesibilidad, la sustentabilidad y la innovación en productos artísticos.
+        </p>
+        <!-- Puedes expandir con más contenido aquí -->
+    </section>
+
     <footer>
-        <p>© 2025 Ingeniería Química S.A. Todos los derechos reservados.</p>
+        <!-- Mismo footer -->
     </footer>
 
     <script src="script.js"></script>
