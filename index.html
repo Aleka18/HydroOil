@@ -7,71 +7,168 @@
     <title>Inicio - Ingeniería Química S.A.</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Estilos específicos para la imagen principal */
-        .hero {
-            background-image: url('tu-imagen.jpg'); /* reemplaza con tu imagen */
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-            text-align: center;
-            padding: 0 2rem;
-        }
-
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-
-        .hero p {
-            font-size: 1.5rem;
-        }
-
-        .executive-summary {
-            padding: 4rem 2rem;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-
-        nav.navbar {
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 100;
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
             margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        nav.navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 1rem 2rem;
+            z-index: 1000;
+        }
+
+        .hero {
+            background-image: url('tu-imagen.jpg'); /* Reemplaza por tu imagen */
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            position: relative;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+        }
+
+        .hero a.button {
+            background-color: #00a884;
+            padding: 1rem 2rem;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 25px;
+            transition: background 0.3s;
+        }
+
+        .hero a.button:hover {
+            background-color: #00715e;
+        }
+
+        .executive-summary {
+            padding: 4rem 2rem;
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .executive-summary h2 {
+            font-size: 2rem;
+            color: #333;
+        }
+
+        .highlights {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 4rem auto;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .highlight-card {
+            flex: 1 1 300px;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .highlight-card h3 {
+            margin-top: 0;
+            color: #00a884;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 4rem;
         }
     </style>
 </head>
 <body>
+
     <nav class="navbar">
-        <!-- Misma barra de navegación -->
+        <!-- Aquí iría tu barra de navegación -->
+        Ingeniería Química S.A.
     </nav>
 
     <section class="hero">
-        <div>
-            <h1>Bienvenido a Ingeniería Química S.A.</h1>
-            <p>Innovación ecológica en materiales artísticos</p>
+        <div class="hero-content">
+            <h1>Innovación ecológica para artistas conscientes</h1>
+            <p>Fabricamos pinturas al óleo miscibles en agua, sostenibles y accesibles para todos.</p>
+            <a href="#resumen" class="button">Ver más</a>
         </div>
     </section>
 
     <section class="executive-summary" id="resumen">
         <h2>Resumen Ejecutivo</h2>
         <p>
-            Somos una empresa dedicada a la fabricación de pinturas al óleo miscibles en agua, respetuosas con el medio ambiente y la salud humana. Nuestra propuesta de valor está centrada en la accesibilidad, la sustentabilidad y la innovación en productos artísticos.
+            Ingeniería Química S.A. es una empresa enfocada en el desarrollo de pinturas ecológicas miscibles en agua. Nuestro objetivo es proporcionar materiales seguros y de alta calidad, reduciendo el impacto ambiental y cuidando la salud de los artistas. Creemos en democratizar el arte sustentable mediante productos asequibles, sin comprometer la excelencia técnica.
         </p>
-        <!-- Puedes expandir con más contenido aquí -->
+    </section>
+
+    <section class="highlights">
+        <div class="highlight-card">
+            <h3>100% libre de metales pesados</h3>
+            <p>Nuestras pinturas están formuladas sin cobalto, plomo ni solventes tóxicos.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Aptas para todos los niveles</h3>
+            <p>Desde principiantes hasta profesionales, nuestras pinturas ofrecen resultados consistentes y seguros.</p>
+        </div>
+        <div class="highlight-card">
+            <h3>Comprometidos con el planeta</h3>
+            <p>Fabricación responsable y empaques reciclables para un arte más consciente.</p>
+        </div>
     </section>
 
     <footer>
-        <!-- Mismo footer -->
+        &copy; 2025 Ingeniería Química S.A. | Todos los derechos reservados
     </footer>
 
     <script src="script.js"></script>
