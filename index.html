@@ -1,83 +1,90 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AquaPaint - Pinturas Sostenibles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - AquaPaint</title>
   <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
 </head>
-
 <body>
-  <!-- Encabezado con logo y menú -->
-  <header class="navbar">
+  <!-- NAVBAR -->
+  <nav class="navbar">
     <div class="logo">
-      <!-- Aquí se colocará el logo -->
-      <img src="logo.png" alt="AquaPaint Logo" />
+      <img src="ruta-del-logo.png" alt="Logo de AquaPaint" class="logo-img"> <!-- Aquí va el logo -->
     </div>
-    <nav class="nav-links" id="navLinks">
-      <a href="index.html">Inicio</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="productos.html">Productos</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="sostenibilidad.html">Sostenibilidad</a>
-      <a href="contacto.html">Contacto</a>
-    </nav>
-    <div class="menu-icon" onclick="toggleMenu()">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="hamburger">☰</div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <header class="hero enhanced-hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Transformamos la pintura en soluciones sostenibles</h1>
+        <p class="bubble-text">Desde el laboratorio hasta el mercado</p>
+        <a href="#sobre-nosotros" class="btn">Ver más</a>
+      </div>
     </div>
   </header>
 
-  <!-- Imagen principal con mensaje y scroll -->
-  <section class="hero-section">
-    <div class="hero-overlay">
-      <h1>HydroOil: Revoluciona tu arte con sostenibilidad</h1>
-      <p>La pintura al óleo miscible en agua que cuida tu salud y el planeta</p>
-      <a href="#resumen" class="btn-primary">Descubre más</a>
+  <!-- SOBRE NOSOTROS -->
+  <section id="sobre-nosotros" class="welcome">
+    <h2>Sobre nosotros</h2>
+    <p class="bubble-text">
+      AquaPaint es una empresa dedicada a ofrecer soluciones innovadoras y sostenibles en el ámbito de la pintura. Nuestra misión es transformar la industria mediante productos ecológicos, eficientes y económicamente viables.
+    </p>
+  </section>
+
+  <!-- ÁREAS DE ESPECIALIZACIÓN -->
+  <section class="services">
+    <h2>Áreas de Especialización</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="img-placeholder"></div>
+        <h3>Desarrollo de Pinturas</h3>
+        <p class="bubble-text">Innovación en pinturas de bajo impacto ambiental.</p>
+      </div>
+      <div class="service-card">
+        <div class="img-placeholder"></div>
+        <h3>Consultoría en Sostenibilidad</h3>
+        <p class="bubble-text">Asesoramiento en la implementación de soluciones verdes en la industria de la pintura.</p>
+      </div>
+      <div class="service-card">
+        <div class="img-placeholder"></div>
+        <h3>Soluciones para Construcción</h3>
+        <p class="bubble-text">Pinturas ecológicas y duraderas para la industria de la construcción.</p>
+      </div>
     </div>
   </section>
 
-  <!-- Resumen Ejecutivo -->
-  <section class="resumen" id="resumen">
-    <h2>¿Qué es AquaPaint?</h2>
-    <p>AquaPaint es una empresa dedicada a desarrollar y distribuir materiales artísticos ecológicos. Nuestro producto estrella, <strong>HydroOil</strong>, es una pintura al óleo miscible en agua que ofrece la calidad de las pinturas tradicionales sin los riesgos ambientales ni de salud.</p>
-    <div class="resumen-cards">
-      <div class="card">
-        <h3>Sostenible</h3>
-        <p>Sin disolventes tóxicos, sin metales pesados. Ideal para estudios, hogares y escuelas.</p>
+  <!-- CLIENTES / IMPACTO -->
+  <section class="projects">
+    <h2>Texto por colocar</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="img-placeholder"></div>
+        <h3>+50 Empresas Aliadas</h3>
+        <p class="bubble-text">Trabajamos con líderes del sector industrial, alimentario y farmacéutico.</p>
       </div>
-      <div class="card">
-        <h3>Alta Calidad</h3>
-        <p>Pigmentos de grado profesional, excelente permanencia y tiempos de secado optimizados.</p>
-      </div>
-      <div class="card">
-        <h3>Accesible</h3>
-        <p>Diseñada para democratizar el acceso al arte consciente y seguro en toda América Latina.</p>
+      <div class="project-card">
+        <div class="img-placeholder"></div>
+        <h3>+100 Proyectos Sustentables</h3>
+        <p class="bubble-text">Reducción de residuos, eficiencia energética y economía circular.</p>
       </div>
     </div>
   </section>
 
-  <!-- Llamado a la acción -->
-  <section class="cta">
-    <h2>Únete al cambio en el mundo del arte</h2>
-    <a href="contacto.html" class="btn-secondary">Contáctanos</a>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="footer-links">
-      <a href="index.html">Inicio</a>
-      <a href="nosotros.html">Nosotros</a>
-      <a href="productos.html">Productos</a>
-      <a href="proyectos.html">Proyectos</a>
-      <a href="sostenibilidad.html">Sostenibilidad</a>
-      <a href="contacto.html">Contacto</a>
-    </div>
-    <p>&copy; 2025 AquaPaint. Todos los derechos reservados.</p>
+  <footer>
+    <p>© 2025 AquaPaint. Todos los derechos reservados.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
-
 </html>
