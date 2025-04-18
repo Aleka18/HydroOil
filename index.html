@@ -1,91 +1,95 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Inicio - AquaPaint</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaPaint</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- NAVBAR -->
-  <nav class="navbar">
-    <div class="logo">
-      <a href="index.html">
-        <img src="https://github.com/Aleka18/HydroOil/blob/main/WhatsApp%20Image%202025-04-17%20at%209.08.03%20PM.jpeg?raw=true" alt="Logo de AquaPaint" class="logo-img"> <!-- Aquí va el logo -->
-      </a>
-    </div>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="proyectos.html">Proyectos</a></li>
-      <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-    <div class="hamburger">☰</div>
-  </nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="https://github.com/Aleka18/HydroOil/blob/main/Picsart_25-04-17_21-07-54-339.png?raw=true" alt="AquaPaint Logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#welcome">Bienvenida</a></li>
+            <li><a href="#about">Acerca de</a></li>
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+        <div class="hamburger">
+            <span>&#9776;</span>
+        </div>
+    </nav>
 
-  <!-- HERO SECTION -->
-  <header class="hero enhanced-hero">
-    <div class="hero-overlay">
-      <div class="hero-content">
-        <h1>Transformamos la pintura en soluciones sostenibles</h1>
-        <p class="bubble-text">Desde el laboratorio hasta el mercado</p>
-        <a href="#sobre-nosotros" class="btn">Ver más</a>
-      </div>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenidos a AquaPaint</h1>
+            <p>Explora nuestras pinturas ecológicas y asequibles.</p>
+            <a href="#services" class="btn">Ver Productos</a>
+        </div>
+    </section>
 
-  <!-- SOBRE NOSOTROS -->
-  <section id="sobre-nosotros" class="welcome">
-    <h2>Sobre nosotros</h2>
-    <p class="bubble-text">
-      AquaPaint es una empresa dedicada a ofrecer soluciones innovadoras y sostenibles en el ámbito de la pintura. Nuestra misión es transformar la industria mediante productos ecológicos, eficientes y económicamente viables.
-    </p>
-  </section>
+    <!-- Welcome Section -->
+    <section class="welcome" id="welcome">
+        <h2>Bienvenida a AquaPaint</h2>
+        <p>Somos una empresa dedicada a ofrecer pinturas al óleo ecológicas y fáciles de usar. ¡Descubre lo que tenemos para ti!</p>
+    </section>
 
-  <!-- ÁREAS DE ESPECIALIZACIÓN -->
-  <section class="services">
-    <h2>Áreas de Especialización</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="img-placeholder"></div>
-        <h3>Desarrollo de Pinturas</h3>
-        <p class="bubble-text">Innovación en pinturas de bajo impacto ambiental.</p>
-      </div>
-      <div class="service-card">
-        <div class="img-placeholder"></div>
-        <h3>Consultoría en Sostenibilidad</h3>
-        <p class="bubble-text">Asesoramiento en la implementación de soluciones verdes en la industria de la pintura.</p>
-      </div>
-      <div class="service-card">
-        <div class="img-placeholder"></div>
-        <h3>Soluciones para Construcción</h3>
-        <p class="bubble-text">Pinturas ecológicas y duraderas para la industria de la construcción.</p>
-      </div>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <h1>Sobre Nosotros</h1>
+        <p>AquaPaint se fundó con el objetivo de proporcionar soluciones sostenibles en el mundo de las pinturas. Nos preocupamos por el medio ambiente y por ofrecer productos que respeten nuestra naturaleza.</p>
+    </section>
 
-  <!-- CLIENTES / IMPACTO -->
-  <section class="projects">
-    <h2>Texto por colocar</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="img-placeholder"></div>
-        <h3>+50 Empresas Aliadas</h3>
-        <p class="bubble-text">Trabajamos con líderes del sector industrial, alimentario y farmacéutico.</p>
-      </div>
-      <div class="project-card">
-        <div class="img-placeholder"></div>
-        <h3>+100 Proyectos Sustentables</h3>
-        <p class="bubble-text">Reducción de residuos, eficiencia energética y economía circular.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <h1>Servicios</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Pinturas Ecológicas</h3>
+                <p>Nuestras pinturas son 100% ecológicas, seguras y fáciles de usar.</p>
+            </div>
+            <div class="service-card">
+                <h3>Asesoría Técnica</h3>
+                <p>Brindamos asesoría para elegir los productos adecuados para tu proyecto.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>© 2025 AquaPaint. Todos los derechos reservados.</p>
-  </footer>
-  <script src="script.js"></script>
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <h1>Proyectos</h1>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Proyectos de Pintura</h3>
+                <p>Conoce algunos de nuestros proyectos más destacados donde hemos utilizado nuestras pinturas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h1>Contacto</h1>
+        <div class="contact-content">
+            <p>¿Tienes alguna pregunta? No dudes en ponerte en contacto con nosotros.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu correo" required>
+                <textarea placeholder="Tu mensaje" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 AquaPaint. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
