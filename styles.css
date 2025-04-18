@@ -25,13 +25,15 @@ body {
 }
 
 .logo {
-    width: 100px;  /* Ajusta el tamaño de la imagen del logo */
-    height: auto;  /* Mantiene la proporción de la imagen */
+    width: auto;  /* El contenedor de la imagen no debe tener un ancho fijo */
+    height: 50px;  /* Ajusta la altura para que el logo no sea demasiado grande */
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 100%;  /* La imagen ocupará todo el contenedor */
-    height: auto;  /* Mantiene la proporción de la imagen */
+    height: 100%;  /* La imagen ocupará todo el espacio de su contenedor sin deformarse */
+    width: auto;  /* Mantiene la proporción */
 }
 
 .nav-links {
