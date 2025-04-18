@@ -1,46 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - AquaPaint</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - AquaPaint</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">
-            <img src="ruta-del-logo.png" alt="Logo de AquaPaint" class="logo-img">
-        </div>
-        <ul class="nav-links">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li><a href="servicios.html">Servicios</a></li>
-            <li><a href="proyectos.html">Proyectos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <div class="hamburger">☰</div>
-    </nav>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="ruta-del-logo.png" alt="Logo de AquaPaint" class="logo-img">
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="hamburger">☰</div>
+  </nav>
 
-    <section class="contact">
-        <h1>Contáctanos</h1>
-        <div class="contact-content">
-            <p class="bubble-text">Estamos aquí para ayudarte. ¡Escríbenos!</p>
-            <div class="img-placeholder"></div>
-            <p>Si tienes preguntas o inquietudes, no dudes en ponerte en contacto con nosotros a través del siguiente formulario:</p>
+  <section class="contact">
+    <h1>Contáctanos</h1>
+    <p class="bubble-text">Estamos aquí para ayudarte. Puedes llamarnos, escribirnos o llenar el siguiente formulario.</p>
+    
+    <div class="contact-container">
+      <div class="contact-info">
+        <p><strong>Teléfono:</strong> 12345678</p>
+        <p><strong>Dirección:</strong> Dirección por confirmar</p>
+        <p><strong>Email:</strong> contacto@aquapaint.com</p>
+      </div>
 
-            <form action="mailto:contacto@aquapaint.com" method="post" enctype="text/plain" class="contact-form">
-                <input type="text" name="name" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="message" placeholder="Tu mensaje" rows="5" required></textarea>
-                <button type="submit">Enviar mensaje</button>
-            </form>
-        </div>
-    </section>
+      <form class="contact-form">
+        <h2>Envíanos un mensaje</h2>
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="correo" placeholder="Tu correo electrónico" required>
+        <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        <button type="submit" class="btn">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 AquaPaint. Todos los derechos reservados.</p>
-    </footer>
-
-    <script src="script.js"></script>
+  <footer>
+    <p>© 2025 AquaPaint. Todos los derechos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
