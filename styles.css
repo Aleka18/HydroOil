@@ -25,8 +25,13 @@ body {
 }
 
 .logo {
-    font-size: 1.8rem;
-    font-weight: 600;
+    width: 100px;  /* Ajusta el tamaño de la imagen del logo */
+    height: auto;  /* Mantiene la proporción de la imagen */
+}
+
+.logo img {
+    width: 100%;  /* La imagen ocupará todo el contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
 }
 
 .nav-links {
@@ -279,4 +284,3 @@ footer {
         padding: 2rem 1.5rem;
     }
 }
-
