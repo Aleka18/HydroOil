@@ -25,15 +25,8 @@ body {
 }
 
 .logo {
-    width: auto;  /* El contenedor de la imagen no debe tener un ancho fijo */
-    height: 50px;  /* Ajusta la altura para que el logo no sea demasiado grande */
-    display: flex;
-    align-items: center;
-}
-
-.logo img {
-    height: 100%;  /* La imagen ocupará todo el espacio de su contenedor sin deformarse */
-    width: auto;  /* Mantiene la proporción */
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .nav-links {
@@ -286,3 +279,4 @@ footer {
         padding: 2rem 1.5rem;
     }
 }
+
