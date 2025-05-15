@@ -10,6 +10,7 @@
   --bg-body: #F9FAFB;
   --bg-section: #F3F4F6;
   --bg-white: #FFFFFF;
+  --bg-beige:#f0ebdf;
   
   /* Colores de texto */
   --text-dark: #333333;
@@ -184,22 +185,32 @@ body {
     animation: float 4s infinite ease-in-out;
 }
 
+/*
 .bubble-text {
-    /*background: var(--color-primary-extra-light);
+    background: var(--color-primary-extra-light);
     padding: 1rem 2rem;
     border-radius: 20px;
     display: inline-block;
     margin: 1rem 0;
     box-shadow: var(--shadow-light);
-    transition: transform 0.3s;*/
+    transition: transform 0.3s;
 
 }
+*/
 
 /*
 .bubble-text:hover {
     transform: translateY(-5px);
 }
  */
+
+#sobre-nosotros {
+    background-color: var(--bg-beige);
+}
+
+#sobre-nosotros img{
+    width: 30vw;
+}
 
 .about-grid, .services-grid, .projects-grid {
     display: grid;
@@ -227,6 +238,15 @@ body {
     background: var(--color-primary-lightest);
     border-radius: 10px;
     margin-bottom: 1rem;
+}
+
+.img-placeholder img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Equivalente a background-size: cover para <img> */
+    object-position: center; /* Centra la imagen */
+    border-radius: 10px;
+
 }
 
 footer {
