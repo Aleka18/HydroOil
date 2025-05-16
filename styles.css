@@ -214,7 +214,7 @@ body {
 }
 
 #sobre-nosotros img{
-    width: 30vw;
+    width: 25vw;
 }
 
 #hydro-oil-description {
@@ -295,6 +295,10 @@ footer {
     color: var(--text-white);
     padding: 2rem;
     text-align: center;
+}
+
+.social-media-icon{
+    width: 3vw;
 }
 
 @keyframes float {
