@@ -446,6 +446,16 @@ footer {
         background-position: center;
         background-size: cover;
     }
+
+    #seccion-fundador{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #seccion-fundador .about-grid{
+        display: flex;
+        flex-direction: column;
+    } 
 }
 
 /*Versión móvil*/
