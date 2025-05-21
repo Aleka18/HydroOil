@@ -2,20 +2,27 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nosotros - AquaPaint</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inicio - AquaPaint</title>
+  <link rel="icon" type="image/x-icon" href="./images/logo-con-nombre.png">
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- NAVBAR -->
   <nav class="navbar">
     <div class="logo">
-      <img src="ruta-del-logo.png" alt="Logo de AquaPaint" class="logo-img">
+      <img src="./images/logo.png" alt="Logo de AquaPaint" id="logo-img"> <!-- Aquí va el logo -->
+      <span>AquaPaint</span>
     </div>
     <ul class="nav-links">
       <li><a href="index.html">Inicio</a></li>
       <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="servicios.html">Servicios</a></li>
-      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="servicios.html">Soluciones</a></li>
+      <!-- <li><a href="proyectos.html">Proyectos</a></li> -->
       <li><a href="contacto.html">Contacto</a></li>
     </ul>
     <div class="hamburger">☰</div>
@@ -25,21 +32,31 @@
   <section class="about" style="padding-top: 6rem; padding-bottom: 3rem;">
     <h1 style="text-align: center; font-size: 2rem; color: #003366;">Sobre Nosotros</h1>
     <div class="about-grid">
+
       <div class="about-item" style="padding: 1.5rem;">
         <h2 style="font-size: 1.8rem; color: #003366; margin-bottom: 1rem;">Misión</h2>
         <p style="font-size: 1rem; color: #333; line-height: 1.6;">Ofrecer materiales artísticos de alta calidad que respeten la salud de los artistas y el medio ambiente, democratizando el acceso al arte sostenible.</p>
-        <div class="img-placeholder"></div>
+        <div class="img-placeholder">
+          <img src="./images/mision.jpg" alt="Misión">
+        </div>
       </div>
+
       <div class="about-item" style="padding: 1.5rem;">
         <h2 style="font-size: 1.8rem; color: #003366; margin-bottom: 1rem;">Visión</h2>
         <p style="font-size: 1rem; color: #333; line-height: 1.6;">Convertirse en la marca líder en México de pinturas ecológicas, promoviendo una nueva generación de artistas comprometidos con la sustentabilidad.</p>
-        <div class="img-placeholder"></div>
+        <div class="img-placeholder">
+          <img src="./images/vision.jpg" alt="Visión">
+        </div>
       </div>
+
       <div class="about-item" style="padding: 1.5rem;">
         <h2 style="font-size: 1.8rem; color: #003366; margin-bottom: 1rem;">Valores</h2>
         <p style="font-size: 1rem; color: #333; line-height: 1.6;">Creemos en el arte como una forma de expresión consciente, que no debe comprometer ni la salud humana ni el equilibrio del planeta.</p>
-        <div class="img-placeholder"></div>
+        <div class="img-placeholder">
+          <img src="./images/valores.jpg" alt="Valores">
+        </div>
       </div>
+
     </div>
   </section>
 
